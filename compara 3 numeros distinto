@@ -1,0 +1,23 @@
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+using namespace std;
+ int max(int a,int b);
+ int main(){
+ 	int num1,num2,num3;
+ 	cout <<"introdusca el primer numero:"<<endl;
+ 	       cin>>num1;
+ 	cout <<"introdusca el segundo numero:"<<endl;
+ 	       cin>>num2;
+ 	cout <<"introdusca el tercer numero:"<<endl;
+ 	       cin>>num3;
+ 	       int max1= max(max(num1,num2),num3); 	       
+ 	cout<<"El numero mayor es:"<<max1<<endl;
+    return 1;
+ }
+ int max(int a,int b){
+ 	int c;
+ 	if(a>b){c=a; }
+ 	else{c=b; }
+ 	return c;
+}
